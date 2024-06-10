@@ -17,6 +17,12 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .box form .inputBox {
+            margin-top: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,23 +30,28 @@
     <div class="box">
         <span class="borderLine"></span>
         <form>
-            <h2>Smart Login System</h2>
+            <h2>Sign Up</h2>
             <div class="inputBox">
-                <input id="userEmail" type="email">
-                <span>User Email</span>
+                <input id="userName" type="text" placeholder="Enter your name">
                 <i></i>
             </div>
             <div class="inputBox">
-                <input id="userPassword" type="password">
-                <span>Password</span>
+                <input id="userEmail" type="email" placeholder="Enter your email">
                 <i></i>
             </div>
-            <button class="btn btn-outline-info" type="submit">Login</button>
+            <div class="inputBox">
+                <input id="userPassword" type="password" placeholder="Create password">
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input id="userPassword" type="password" placeholder="Rewrite password">
+                <i></i>
+            </div>
+            <p id="exist"></p>
+            <button class="btn btn-outline-info" type="submit">Sign Up</button>
             <div class="links">
-                <a href="#">Forget Password?</a>
-                <br />
-                Don't have an account?
-                <a href="signup.html">Sign Up</a>
+                You have an account?
+                <a href="index.html">SignIn</a>
             </div>
         </form>
     </div>
