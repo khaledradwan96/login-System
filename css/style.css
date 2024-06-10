@@ -16,7 +16,7 @@ body {
 .box {
   position: relative;
   width: 400px;
-  height: 420px;
+  height: 450px;
   background: #1c1c1c;
   border-radius: 8px;
   overflow: hidden;
@@ -80,64 +80,18 @@ body {
 .box form h2 {
   color: #17a2b8;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
-.box form .inputBox {
-  position: relative;
-  width: 300px;
-  margin-top: 20px;
-}
 .box form .inputBox input {
-  position: relative;
-  width: 100%;
-  padding: 20px 10px 10px;
-  background: transparent;
-  outline: none;
-  border: none;
-  box-shadow: none;
-  color: #23242a;
-  font-size: 1em;
+  margin-bottom: 10px;
   letter-spacing: 0.05em;
-  transition: 0.5s;
-  z-index: 10;
-}
-
-.box form .inputBox span {
-  position: absolute;
-  left: 0;
-  padding: 20px 10px 10px;
-  pointer-events: none;
-  color: #8f8f8f;
-  font-size: 1em;
-  letter-spacing: 0.05em;
-  transition: 0.5s;
-}
-.box form .inputBox input:valid ~ span,
-.box form .inputBox input:focus ~ span {
-  color: #fff;
-  font-size: 0.75em;
-  transform: translateY(-34px);
-}
-
-.box form .inputBox i {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  border-radius: 4px;
-  overflow: hidden;
-  transition: 0.5s;
-  pointer-events: none;
-}
-.box form .inputBox input:valid ~ i,
-.box form .inputBox input:focus ~ i {
-  height: 44px;
+  border: 1px solid #ced4da;
 }
 
 .box form .links {
   color: #fff;
+  margin-top: 0.5em;
 }
 .box form .links a {
   margin: 10px 0;
@@ -152,6 +106,11 @@ body {
 .box form button[type="submit"] {
   padding: 9px 25px;
   font-size: 0.9em;
-  margin-top: 10px;
   font-weight: 500;
+}
+
+#result {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
 }

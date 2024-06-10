@@ -17,12 +17,6 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        .box form .inputBox {
-            margin-top: 0;
-        }
-    </style>
 </head>
 
 <body>
@@ -32,22 +26,12 @@
         <form>
             <h2>Sign Up</h2>
             <div class="inputBox">
-                <input id="userName" type="text" placeholder="Enter your name">
-                <i></i>
+                <input id="signupName" type="text" class="form-control" placeholder="Enter your name">
+                <input id="signupEmail" type="email" class="form-control" placeholder="Enter your email">
+                <input id="signupPassword" type="password" class="form-control" placeholder="Create password">
+                <input id="signupRePassword" type="password" class="form-control" placeholder="Rewrite password">
             </div>
-            <div class="inputBox">
-                <input id="userEmail" type="email" placeholder="Enter your email">
-                <i></i>
-            </div>
-            <div class="inputBox">
-                <input id="userPassword" type="password" placeholder="Create password">
-                <i></i>
-            </div>
-            <div class="inputBox">
-                <input id="userPassword" type="password" placeholder="Rewrite password">
-                <i></i>
-            </div>
-            <p id="exist"></p>
+            <p id="result"></p>
             <button class="btn btn-outline-info" type="submit">Sign Up</button>
             <div class="links">
                 You have an account?
