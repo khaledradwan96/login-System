@@ -90,11 +90,25 @@ function login(){
             sessionStorage.setItem('userName', signupData[i].name)
             console.log("Yes")
             document.body.innerHTML = `
-
-            `;
+                <nav class="navbar navbar-expand-lg navbar-dark shadow">
+                    <div class="container">
+                        <a class="navbar-brand">Smart Login</a>
+                        <a class="btn btn-outline-danger" href="#">Logout</a>
+                    </div>
+                </nav>
+                <div class="box">
+                    <span class="borderLine"></span>
+                    <div class="content">
+                        <p>Welcome ${signupData[i].name}</p>
+                    </div>
+                </div>
+                `
             }else{
             console.log("NO")
             result.innerHTML = '<span class="text-danger">incorrect email or password</span>'
         }
     }
 }
+
+
+// k@g.com

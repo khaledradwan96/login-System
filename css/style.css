@@ -167,3 +167,22 @@ body {
 .box form .inputBox input:valid ~ i {
   height: 44px;
 }
+
+/* ======== Home page ========= */
+
+.box .content {
+  position: absolute;
+  inset: 4px;
+  background: #222;
+  padding: 40px;
+  border-radius: 8px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.box .content p {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+}
