@@ -69,3 +69,32 @@ console.log(signupData)
 }
 
 // ============  login page ============
+var loginEmail = document.getElementById("loginEmail")
+var loginPassword = document.getElementById("loginPassword")
+
+    // check all inputs have values or empty
+    function checkLoginEmpty(){
+        if(loginEmail.value == "" || loginPassword.value == ""){
+                return false;
+        }
+    }
+
+function login(){
+    if(checkLoginEmpty() == false){
+            result.innerHTML = '<span class="text-danger">All inputs is required</span>'
+    }
+    var email = loginEmail.value
+    var password = loginPassword.value;
+    for(var i =0; i<signupData.length; i++){
+        if(signupData[i].email.toLowerCase() == email.toLowerCase() && signupData[i].password == password){
+            sessionStorage.setItem('userName', signupData[i].name)
+            console.log("Yes")
+            document.body.innerHTML = `
+
+            `;
+            }else{
+            console.log("NO")
+            result.innerHTML = '<span class="text-danger">incorrect email or password</span>'
+        }
+    }
+}
