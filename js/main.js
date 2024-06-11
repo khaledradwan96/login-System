@@ -69,4 +69,3 @@ console.log(signupData)
 }
 
 // ============  login page ============
-
