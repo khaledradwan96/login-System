@@ -40,7 +40,6 @@ function validEmail(){
     }
 }
 
-btn.addEventListener("click", signUp)
 function signUp(){
     if(checkEmails() == false){
         result.innerHTML = '<span class="text-danger">email already exists</span>'
@@ -65,4 +64,9 @@ function signUp(){
         localStorage.setItem('users', JSON.stringify(signupData))
         result.innerHTML = '<span class="text-success">Sign Up Success</span>'
     }
+    
+console.log(signupData)
 }
+
+// ============  login page ============
+
