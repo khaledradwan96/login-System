@@ -98,9 +98,14 @@ function login(){
 }
 }
 
-
-function logout(){
-
+// ============  Home page ============
+var userName = sessionStorage.getItem('userName')
+if(userName){
+    document.querySelector(".box p").innerHTML = "Welcome "+ userName
 }
 
-// k@g.com
+
+function logout(){
+    sessionStorage.removeItem("userName")
+    location.replace('index.html')
+}
